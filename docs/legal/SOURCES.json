@@ -1,0 +1,51 @@
+{
+  "format": 1,
+  "scope": "Karty startowe PL/UE. Przegląd publicznych materiałów do projektowania aplikacji; nie pełny przegląd obowiązującego prawa.",
+  "sources": [
+    {
+      "id": "EDPB_BASICS",
+      "title": "EROD — podstawy ochrony danych i zasady RODO",
+      "url": "https://www.edpb.europa.eu/sme/learn-the-basics/data-protection-basics_en",
+      "type": "guidance",
+      "reviewed_on": "2026-10-20",
+      "sections": ["What is personal data?", "The key principles of the GDPR", "Art. 6 GDPR — omówienie podstaw przetwarzania"],
+      "notes": "Dane mogą identyfikować osobę bezpośrednio albo pośrednio. Przetwarzanie wymaga właściwej podstawy; zgoda jest jedną z możliwości. Cel wyznacza potrzebny zakres i czas przechowywania. Dane osobowe powinny być prawidłowe i chronione. Karta jest skrótem poradnika, nie tekstem ustawy. Zakres zastosowania i wyjątki trzeba ustalić w kontekście."
+    },
+    {
+      "id": "EDPB_DESIGN",
+      "title": "EROD — Guidelines 4/2019, ochrona danych w fazie projektowania i domyślnie",
+      "url": "https://www.edpb.europa.eu/documents/guideline/guidelines-42019-on-article-25-data-protection-by-design-and-by-default_en",
+      "type": "guidance",
+      "reviewed_on": "2026-10-20",
+      "sections": ["Guidelines 4/2019 — art. 25 RODO", "Data protection by design and by default — cykl życia"],
+      "notes": "Przejrzano wytyczne w wersji 2.0 przyjętej 20.10.2020 oraz stronę publikacji. Dobór skutecznych środków technicznych i organizacyjnych powinien uwzględniać ochronę danych przed rozpoczęciem przetwarzania i w toku działania systemu. Wytyczne dotyczą również istniejących systemów. Samo zainstalowanie narzędzia audytowego nie realizuje tych zasad."
+    },
+    {
+      "id": "EDPB_RIGHTS",
+      "title": "EROD — realizacja praw osób",
+      "url": "https://www.edpb.europa.eu/sme/be-compliant/respect-individuals-rights_en",
+      "type": "guidance",
+      "reviewed_on": "2026-10-20",
+      "sections": ["Respect individuals’ rights", "Right to information", "Right to rectification", "Right to erasure"],
+      "notes": "System i procedury powinny wspierać realizację właściwych praw, w tym dostępu i sprostowania. Zastosowanie konkretnego prawa zależy od sytuacji; usunięcie danych nie jest bezwzględne. Informacje o przetwarzaniu powinny odpowiadać rzeczywistym celom i przepływom. Role administratora i podmiotu przetwarzającego wymagają ustalenia."
+    },
+    {
+      "id": "UODO_DPIA",
+      "title": "UODO — Kiedy trzeba przeprowadzić ocenę skutków dla ochrony danych?",
+      "url": "https://uodo.gov.pl/pl/598/3617",
+      "type": "guidance",
+      "reviewed_on": "2026-10-20",
+      "sections": ["Art. 35 RODO — przesłanki DPIA w omówieniu UODO", "Wstępna ocena potrzeby DPIA"],
+      "notes": "Nie każda operacja wymaga pełnej DPIA. Potrzebę ocenia się przed przetwarzaniem według jego charakteru, zakresu, kontekstu, celu i prawdopodobieństwa wysokiego ryzyka. Administratorem pozostaje podmiot odpowiedzialny za ocenę, z konsultacją IOD, gdy ma zastosowanie. Karta nie przejmuje zawartych w starszym materiale dat stosowania AI Act."
+    },
+    {
+      "id": "EC_AI",
+      "title": "Komisja Europejska — AI Act, podejście zależne od ryzyka",
+      "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+      "type": "official_summary",
+      "reviewed_on": "2026-10-20",
+      "sections": ["A Risk-based Approach", "High risk", "Transparency risk", "Application timeline — wymaga bieżącej weryfikacji"],
+      "notes": "Klasyfikacja zależy od przeznaczenia i roli podmiotu. Omówienie wskazuje m.in. określone zastosowania AI w ocenianiu egzaminów jako przykłady wysokiego ryzyka. Samo użycie modelu w aplikacji nie przesądza tej kwalifikacji. Nie zapisano na stałe terminów stosowania: należy sprawdzać aktualny akt i jego zmiany. Wymagania jakości danych i nadzoru trzeba przypisać do właściwego zakresu obowiązków."
+    }
+  ]
+}

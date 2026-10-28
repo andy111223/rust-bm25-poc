@@ -1,0 +1,244 @@
+{
+  "title": "Przykładowa lekcja: wybór komunikatu i sprawdzenie rozumienia",
+  "overview": "To wymyślony przykład pomocniczy, nie kod Twojej aplikacji. Klasa ConnectionLabel zawiera metodę, która dostaje wartość prawda/fałsz i wybiera napis. Przykład pokazuje nowy układ pytań i rozwiązań bez wywoływania modelu.",
+  "plan_connection": {
+    "current_goal": "Sprawdzić wygląd lekcji, diagramu i ćwiczeń.",
+    "role_now": "W hipotetycznej aplikacji taki kod mógłby wybierać napis dla etykiety stanu.",
+    "next_gap": "Sprawdzenie stanu połączenia i wyświetlenie napisu musiałby zapewnić osobny kod.",
+    "uncertainty": "To przykład spoza projektu; nie przedstawia jego wymagań ani wdrożonego planu.",
+    "evidence": []
+  },
+  "sources": [
+    {
+      "path": "Example.cs",
+      "summary": "Grupuje metodę wybierającą tekst na podstawie przekazanej wartości. Nie sprawdza sieci i nie wyświetla komunikatu.",
+      "coverage": "full",
+      "remaining": ""
+    }
+  ],
+  "methods": [
+    {
+      "source_path": "Example.cs",
+      "name": "GetMessage(bool connected)",
+      "when": "Gdy inny fragment kodu ją wywoła; taki kod nie został pokazany.",
+      "input": "connected: true albo false.",
+      "does": "Sprawdza wartość i wybiera jeden z dwóch napisów.",
+      "returns": "Napis „Połączono” lub „Brak połączenia”, bez samodzielnego wyświetlania."
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Kod przykładu — odczytaj drogę wykonania",
+      "explanation": "public pozwala korzystać z metody z innego kodu. string określa rodzaj wyniku: tekst. bool określa rodzaj wejścia: prawda/fałsz. Nawiasy przy metodzie zawierają parametr. Klamry wyznaczają bloki. if wykonuje swój blok tylko przy prawdziwym warunku.",
+      "source_path": "Example.cs",
+      "symbol": "ConnectionLabel.GetMessage",
+      "code_language": "csharp",
+      "code": "public class ConnectionLabel\n{\n    public string GetMessage(bool connected)\n    {\n        if (connected)\n        {\n            return \"Połączono\";\n        }\n        return \"Brak połączenia\";\n    }\n}",
+      "code_explanation": "Dla true metoda dochodzi do pierwszego return i kończy działanie. Dla false omija blok if i dochodzi do drugiego return. Kolejność tekstu w pliku i warunek wspólnie określają, która droga zostanie wykonana."
+    }
+  ],
+  "new_concepts": [
+    {
+      "key": "csharp.statement.return",
+      "title": "return — oddaj wynik i zakończ metodę",
+      "language": "C#",
+      "category": "przepływ wykonania",
+      "meaning": "return przekazuje wynik do kodu, który wywołał metodę, i kończy bieżące wywołanie.",
+      "why": "Wywołujący dostaje odpowiedź, którą może dalej wykorzystać.",
+      "example": "return \"Połączono\";",
+      "example_explanation": "Wynikiem jest napis. Ta instrukcja sama nie pokazuje go na ekranie.",
+      "pitfall": "Zwrócenie tekstu i jego wyświetlenie są osobnymi operacjami."
+    }
+  ],
+  "reused_concepts": [],
+  "diagrams": [
+    {
+      "title": "Dwie drogi przez GetMessage",
+      "kind": "flow",
+      "nodes": [
+        {
+          "id": "a",
+          "label": "Wejście: connected"
+        },
+        {
+          "id": "b",
+          "label": "Czy connected jest true?"
+        },
+        {
+          "id": "c",
+          "label": "Zwróć „Połączono”"
+        },
+        {
+          "id": "d",
+          "label": "Zwróć „Brak połączenia”"
+        }
+      ],
+      "edges": [
+        {
+          "source": "a",
+          "target": "b",
+          "label": ""
+        },
+        {
+          "source": "b",
+          "target": "c",
+          "label": "tak"
+        },
+        {
+          "source": "b",
+          "target": "d",
+          "label": "nie"
+        }
+      ],
+      "explanation": "To wybór napisu na podstawie otrzymanej wartości. Diagram nie pokazuje rzeczywistego badania sieci."
+    }
+  ],
+  "next_step": "Po przeczytaniu odpowiedz na pytania poniżej. W rzeczywistym projekcie następny krok może polegać na odnalezieniu kodu wywołującego podobną metodę.",
+  "limitations": [
+    "Przykład pomocniczy. Nie uruchamiano aplikacji ani testów; nie analizowano repozytorium XREAL Presentation."
+  ],
+  "self_test": {
+    "questions": [
+      {
+        "id": "q1",
+        "kind": "open",
+        "skill": "explain",
+        "prompt": "Wyjaśnij własnymi słowami: co GetMessage otrzymuje, co robi i co oddaje? Czy sama pokazuje napis na ekranie?",
+        "source_path": "Example.cs",
+        "symbol": "ConnectionLabel.GetMessage",
+        "code_language": "",
+        "code": "",
+        "code_origin": "none",
+        "options": [],
+        "answer": {
+          "text": "Metoda otrzymuje connected, czyli wartość prawda albo fałsz. Wybiera jeden z dwóch napisów i oddaje go miejscu, które ją wywołało. Sama nie wyświetla napisu.",
+          "explanation": "Parametr bool jest wejściem. if wybiera drogę, a return oddaje string i kończy wykonanie tej metody. W kodzie nie ma przypisania napisu do elementu ekranu.",
+          "correct_option_id": "",
+          "checkpoints": [
+            "Rozróżniasz wejściową wartość bool od zwracanego napisu string.",
+            "Opisujesz wybór zależny od connected.",
+            "Oddanie napisu nie jest jego wyświetleniem."
+          ]
+        }
+      },
+      {
+        "id": "q2",
+        "kind": "open",
+        "skill": "predict",
+        "prompt": "Załóż, że wywołano GetMessage(false). Jaki napis otrzyma wywołujący? Prześledź drogę przez metodę.",
+        "source_path": "Example.cs",
+        "symbol": "ConnectionLabel.GetMessage",
+        "code_language": "",
+        "code": "",
+        "code_origin": "none",
+        "options": [],
+        "answer": {
+          "text": "Otrzyma „Brak połączenia”. Warunek if jest fałszywy, więc blok z pierwszym return zostaje pominięty. Wykona się return po tym bloku.",
+          "explanation": "false nie spełnia warunku if (connected). Kod przechodzi do następnej instrukcji za blokiem i zwraca drugi napis. Każde takie wywołanie oddaje tylko jeden wynik.",
+          "correct_option_id": "",
+          "checkpoints": [
+            "Wskazujesz wynik „Brak połączenia”.",
+            "Pomijasz blok warunku i dochodzisz do drugiego return."
+          ]
+        }
+      },
+      {
+        "id": "q3",
+        "kind": "open",
+        "skill": "apply",
+        "prompt": "Podaj proste zastosowanie tej metody w interfejsie aplikacji. Czego jeszcze potrzeba, żeby pokazywała rzeczywisty stan połączenia?",
+        "source_path": "Example.cs",
+        "symbol": "ConnectionLabel.GetMessage",
+        "code_language": "",
+        "code": "",
+        "code_origin": "none",
+        "options": [],
+        "answer": {
+          "text": "Można jej użyć do wybrania tekstu etykiety stanu. Osobny kod musi ustalić rzeczywisty stan połączenia, przekazać go jako connected i wstawić otrzymany napis do etykiety.",
+          "explanation": "Ta metoda tłumaczy podaną wartość na komunikat. Nie sprawdza sieci i nie odświeża ekranu. Jeśli przekazano nieaktualną informację, wybrany napis również może być nieaktualny. To hipotetyczne zastosowanie, nie potwierdzona funkcja XREAL Presentation.",
+          "correct_option_id": "",
+          "checkpoints": [
+            "Wskazujesz praktyczną rolę napisu, np. etykietę stanu.",
+            "Stan połączenia musi ustalić inny fragment kodu.",
+            "Ktoś musi przypisać zwrócony napis do widoku."
+          ]
+        }
+      },
+      {
+        "id": "q4",
+        "kind": "single_choice",
+        "skill": "compare",
+        "prompt": "Co się dzieje, gdy connected ma wartość true i wykona się pierwszy return?",
+        "source_path": "Example.cs",
+        "symbol": "ConnectionLabel.GetMessage",
+        "code_language": "",
+        "code": "",
+        "code_origin": "none",
+        "options": [
+          {
+            "id": "a",
+            "text": "Metoda oddaje oba napisy, jeden po drugim.",
+            "explanation": "Po pierwszym return to wywołanie jest zakończone; drugi return nie jest osiągany."
+          },
+          {
+            "id": "b",
+            "text": "Metoda oddaje „Połączono” i kończy to wywołanie.",
+            "explanation": "To skutek return wewnątrz spełnionego warunku."
+          },
+          {
+            "id": "c",
+            "text": "Metoda sama wyświetla „Połączono” na ekranie.",
+            "explanation": "Zwrócenie tekstu nie wykonuje operacji wyświetlenia w interfejsie."
+          }
+        ],
+        "answer": {
+          "text": "Metoda oddaje „Połączono” i kończy to wywołanie.",
+          "explanation": "return oddaje wynik wywołującemu i kończy bieżące wykonanie metody. Instrukcja za blokiem if nie zostanie już wykonana.",
+          "correct_option_id": "b",
+          "checkpoints": []
+        }
+      },
+      {
+        "id": "q5",
+        "kind": "single_choice",
+        "skill": "limits",
+        "prompt": "Kod wywołujący przekazał true. Czy sam wynik „Połączono” dowodzi, że metoda sprawdziła działające połączenie?",
+        "source_path": "Example.cs",
+        "symbol": "ConnectionLabel.GetMessage",
+        "code_language": "",
+        "code": "",
+        "code_origin": "none",
+        "options": [
+          {
+            "id": "a",
+            "text": "Tak. Sam napis potwierdza test sieci.",
+            "explanation": "Napis jest wynikiem warunku, nie pomiaru; w metodzie nie ma testu sieci."
+          },
+          {
+            "id": "b",
+            "text": "Tak. Typ bool zawsze sprawdza aktualny stan urządzenia.",
+            "explanation": "bool przechowuje prawdę lub fałsz. Sam typ nie pobiera danych z urządzenia."
+          },
+          {
+            "id": "c",
+            "text": "Nie. Metoda wybrała napis na podstawie przekazanej wartości.",
+            "explanation": "Metoda ufa otrzymanemu argumentowi; jego wiarygodność zależy od kodu wywołującego."
+          }
+        ],
+        "answer": {
+          "text": "Nie. Metoda wybrała napis na podstawie przekazanej wartości.",
+          "explanation": "Nie ma tu operacji sprawdzania sieci. Wynik pokazuje, którą wartość przekazano i którą gałąź wykonano, a nie niezależny pomiar stanu połączenia.",
+          "correct_option_id": "c",
+          "checkpoints": []
+        }
+      }
+    ]
+  },
+  "_meta": {
+    "lesson_id": "przyklad",
+    "commit": "DEMONSTRACJA",
+    "branch": "przykład pomocniczy",
+    "created_at": "2026-10-18",
+    "reading_confirmed": false
+  }
+}

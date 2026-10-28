@@ -1,0 +1,284 @@
+{
+  "findings": [
+    {
+      "key": "speech-audio-retention",
+      "title": "Zapisywanie audio wymaga ustalenia celu i czasu przechowywania",
+      "domain": "privacy",
+      "priority": "medium",
+      "confidence": "medium",
+      "kind": "potential_obligation",
+      "observed": "W fikcyjnym przykładzie po transkrypcji zapisuje się plik audio. W pokazanym fragmencie nie ma mechanizmu usuwania.",
+      "applicability": "Jeżeli nagrania dotyczą możliwych do zidentyfikowania osób i przetwarzanie podlega RODO, należy ustalić cel, potrzebny okres oraz odpowiednie zabezpieczenia.",
+      "plain_explanation": "Aplikacja może zachować więcej, niż potrzebuje do udzielenia odpowiedzi. Najpierw ustal, czy nagranie po transkrypcji jest jeszcze potrzebne. Jeśli nie jest, zaplanuj jego usunięcie i sprawdź, gdzie pozostają kopie.",
+      "evidence": [
+        {
+          "path": "example/Transcribe.py",
+          "version": "after",
+          "first_line": 1,
+          "last_line": 1,
+          "quote": "save_audio(audio)"
+        }
+      ],
+      "references": [
+        {
+          "source_id": "EDPB_BASICS",
+          "section": "The key principles of the GDPR",
+          "relevance": "Poradnik opisuje ograniczenie przechowywania w powiązaniu z celem. Nie ustala dla tej aplikacji konkretnej liczby dni."
+        }
+      ],
+      "code_actions": [
+        {
+          "task": "Zaproponować usuwanie niepotrzebnego audio po zakończeniu operacji i ograniczenie zapisu treści w logach.",
+          "verification": "Test na syntetycznym nagraniu: sukces, błąd transkrypcji i przerwanie operacji; sprawdzić pozostające pliki."
+        }
+      ],
+      "author_actions": [
+        {
+          "task": "Ustalić, czy nagranie jest potrzebne po transkrypcji, kto decyduje o celu i jaki dostawca je otrzymuje.",
+          "verification": "Potwierdzony opis celu i przepływu w profilu aplikacji, z referencją do warunków usługi."
+        }
+      ],
+      "questions": [
+        "Czy chcesz zachowywać nagrania po transkrypcji? Jeśli tak, do czego mają służyć?"
+      ],
+      "closure_evidence": [
+        "Potwierdzony cel i okres przechowywania.",
+        "Wynik sprawdzenia usuwania plików oraz kopii."
+      ],
+      "id": "LEGAL-PRZYKLAD",
+      "status": "open",
+      "references_resolved": [
+        {
+          "source_id": "EDPB_BASICS",
+          "section": "The key principles of the GDPR",
+          "relevance": "Poradnik opisuje ograniczenie przechowywania w powiązaniu z celem. Nie ustala dla tej aplikacji konkretnej liczby dni.",
+          "source": {
+            "id": "EDPB_BASICS",
+            "title": "EROD — podstawy ochrony danych i zasady RODO",
+            "url": "https://www.edpb.europa.eu/sme/learn-the-basics/data-protection-basics_en",
+            "type": "guidance",
+            "reviewed_on": "2026-10-20",
+            "sections": [
+              "What is personal data?",
+              "The key principles of the GDPR",
+              "Art. 6 GDPR — omówienie podstaw przetwarzania"
+            ],
+            "notes": "Dane mogą identyfikować osobę bezpośrednio albo pośrednio. Przetwarzanie wymaga właściwej podstawy; zgoda jest jedną z możliwości. Cel wyznacza potrzebny zakres i czas przechowywania. Dane osobowe powinny być prawidłowe i chronione. Karta jest skrótem poradnika, nie tekstem ustawy. Zakres zastosowania i wyjątki trzeba ustalić w kontekście.",
+            "retrieval_status": "not_checked_locally",
+            "retrieved_at": ""
+          }
+        }
+      ],
+      "profile_signature": "demo"
+    }
+  ],
+  "flows": [
+    {
+      "key": "speech-to-backend",
+      "purpose": "Nagranie → transkrypcja",
+      "data": "Plik audio i transkrypcja",
+      "origin": "Urządzenie użytkownika",
+      "destination": "Backend transkrypcji",
+      "retention": "Nieustalona — pytanie do autora",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "path": "example/Transcribe.py",
+          "version": "after",
+          "first_line": 1,
+          "last_line": 1,
+          "quote": "save_audio(audio)"
+        }
+      ],
+      "unknowns": [
+        "Czy backend korzysta z zewnętrznego dostawcy?",
+        "Czy plik jest usuwany po transkrypcji?"
+      ]
+    }
+  ],
+  "reports": [
+    {
+      "format": 1,
+      "id": "demo",
+      "title": "Przykład: nagranie głosu po transkrypcji",
+      "commit": "0000000000000000000000000000000000000000",
+      "created_at": "Przykład",
+      "parts": [
+        {
+          "title": "Przykład: nagranie głosu po transkrypcji",
+          "summary": "Fikcyjna demonstracja raportu. Nie są to ustalenia z Twojej aplikacji.",
+          "scope_note": "Jedna linia przykładowego kodu. Bez analizy faktycznej infrastruktury.",
+          "coverage": [
+            {
+              "path": "example/Transcribe.py",
+              "version": "after",
+              "description": "Przykładowy zapis pliku audio."
+            }
+          ],
+          "assumptions": [],
+          "flows": [
+            {
+              "key": "speech-to-backend",
+              "purpose": "Nagranie → transkrypcja",
+              "data": "Plik audio i transkrypcja",
+              "origin": "Urządzenie użytkownika",
+              "destination": "Backend transkrypcji",
+              "retention": "Nieustalona — pytanie do autora",
+              "confidence": "medium",
+              "evidence": [
+                {
+                  "path": "example/Transcribe.py",
+                  "version": "after",
+                  "first_line": 1,
+                  "last_line": 1,
+                  "quote": "save_audio(audio)"
+                }
+              ],
+              "unknowns": [
+                "Czy backend korzysta z zewnętrznego dostawcy?",
+                "Czy plik jest usuwany po transkrypcji?"
+              ]
+            }
+          ],
+          "findings": [
+            {
+              "key": "speech-audio-retention",
+              "title": "Zapisywanie audio wymaga ustalenia celu i czasu przechowywania",
+              "domain": "privacy",
+              "priority": "medium",
+              "confidence": "medium",
+              "kind": "potential_obligation",
+              "observed": "W fikcyjnym przykładzie po transkrypcji zapisuje się plik audio. W pokazanym fragmencie nie ma mechanizmu usuwania.",
+              "applicability": "Jeżeli nagrania dotyczą możliwych do zidentyfikowania osób i przetwarzanie podlega RODO, należy ustalić cel, potrzebny okres oraz odpowiednie zabezpieczenia.",
+              "plain_explanation": "Aplikacja może zachować więcej, niż potrzebuje do udzielenia odpowiedzi. Najpierw ustal, czy nagranie po transkrypcji jest jeszcze potrzebne. Jeśli nie jest, zaplanuj jego usunięcie i sprawdź, gdzie pozostają kopie.",
+              "evidence": [
+                {
+                  "path": "example/Transcribe.py",
+                  "version": "after",
+                  "first_line": 1,
+                  "last_line": 1,
+                  "quote": "save_audio(audio)"
+                }
+              ],
+              "references": [
+                {
+                  "source_id": "EDPB_BASICS",
+                  "section": "The key principles of the GDPR",
+                  "relevance": "Poradnik opisuje ograniczenie przechowywania w powiązaniu z celem. Nie ustala dla tej aplikacji konkretnej liczby dni."
+                }
+              ],
+              "code_actions": [
+                {
+                  "task": "Zaproponować usuwanie niepotrzebnego audio po zakończeniu operacji i ograniczenie zapisu treści w logach.",
+                  "verification": "Test na syntetycznym nagraniu: sukces, błąd transkrypcji i przerwanie operacji; sprawdzić pozostające pliki."
+                }
+              ],
+              "author_actions": [
+                {
+                  "task": "Ustalić, czy nagranie jest potrzebne po transkrypcji, kto decyduje o celu i jaki dostawca je otrzymuje.",
+                  "verification": "Potwierdzony opis celu i przepływu w profilu aplikacji, z referencją do warunków usługi."
+                }
+              ],
+              "questions": [
+                "Czy chcesz zachowywać nagrania po transkrypcji? Jeśli tak, do czego mają służyć?"
+              ],
+              "closure_evidence": [
+                "Potwierdzony cel i okres przechowywania.",
+                "Wynik sprawdzenia usuwania plików oraz kopii."
+              ]
+            }
+          ],
+          "previous_findings": [],
+          "profile_suggestions": [
+            "Ustalić potrzebę zachowania audio."
+          ],
+          "next_steps": [
+            "Opisać docelowe użycie nagrań i odbiorców."
+          ],
+          "limitations": [
+            "Przykład fikcyjny, nie jest audytem projektu.",
+            "Nie uruchamiano aplikacji ani testów.",
+            "Nie potwierdzono aktualnego obowiązywania i zastosowania przepisów."
+          ]
+        }
+      ],
+      "legal_sources": [
+        {
+          "id": "EDPB_BASICS",
+          "title": "EROD — podstawy ochrony danych i zasady RODO",
+          "url": "https://www.edpb.europa.eu/sme/learn-the-basics/data-protection-basics_en",
+          "type": "guidance",
+          "reviewed_on": "2026-10-20",
+          "sections": [
+            "What is personal data?",
+            "The key principles of the GDPR",
+            "Art. 6 GDPR — omówienie podstaw przetwarzania"
+          ],
+          "notes": "Dane mogą identyfikować osobę bezpośrednio albo pośrednio. Przetwarzanie wymaga właściwej podstawy; zgoda jest jedną z możliwości. Cel wyznacza potrzebny zakres i czas przechowywania. Dane osobowe powinny być prawidłowe i chronione. Karta jest skrótem poradnika, nie tekstem ustawy. Zakres zastosowania i wyjątki trzeba ustalić w kontekście.",
+          "retrieval_status": "not_checked_locally",
+          "retrieved_at": ""
+        },
+        {
+          "id": "EDPB_DESIGN",
+          "title": "EROD — Guidelines 4/2019, ochrona danych w fazie projektowania i domyślnie",
+          "url": "https://www.edpb.europa.eu/documents/guideline/guidelines-42019-on-article-25-data-protection-by-design-and-by-default_en",
+          "type": "guidance",
+          "reviewed_on": "2026-10-20",
+          "sections": [
+            "Guidelines 4/2019 — art. 25 RODO",
+            "Data protection by design and by default — cykl życia"
+          ],
+          "notes": "Przejrzano wytyczne w wersji 2.0 przyjętej 20.10.2020 oraz stronę publikacji. Dobór skutecznych środków technicznych i organizacyjnych powinien uwzględniać ochronę danych przed rozpoczęciem przetwarzania i w toku działania systemu. Wytyczne dotyczą również istniejących systemów. Samo zainstalowanie narzędzia audytowego nie realizuje tych zasad.",
+          "retrieval_status": "not_checked_locally",
+          "retrieved_at": ""
+        },
+        {
+          "id": "EDPB_RIGHTS",
+          "title": "EROD — realizacja praw osób",
+          "url": "https://www.edpb.europa.eu/sme/be-compliant/respect-individuals-rights_en",
+          "type": "guidance",
+          "reviewed_on": "2026-10-20",
+          "sections": [
+            "Respect individuals’ rights",
+            "Right to information",
+            "Right to rectification",
+            "Right to erasure"
+          ],
+          "notes": "System i procedury powinny wspierać realizację właściwych praw, w tym dostępu i sprostowania. Zastosowanie konkretnego prawa zależy od sytuacji; usunięcie danych nie jest bezwzględne. Informacje o przetwarzaniu powinny odpowiadać rzeczywistym celom i przepływom. Role administratora i podmiotu przetwarzającego wymagają ustalenia.",
+          "retrieval_status": "not_checked_locally",
+          "retrieved_at": ""
+        },
+        {
+          "id": "UODO_DPIA",
+          "title": "UODO — Kiedy trzeba przeprowadzić ocenę skutków dla ochrony danych?",
+          "url": "https://uodo.gov.pl/pl/598/3617",
+          "type": "guidance",
+          "reviewed_on": "2026-10-20",
+          "sections": [
+            "Art. 35 RODO — przesłanki DPIA w omówieniu UODO",
+            "Wstępna ocena potrzeby DPIA"
+          ],
+          "notes": "Nie każda operacja wymaga pełnej DPIA. Potrzebę ocenia się przed przetwarzaniem według jego charakteru, zakresu, kontekstu, celu i prawdopodobieństwa wysokiego ryzyka. Administratorem pozostaje podmiot odpowiedzialny za ocenę, z konsultacją IOD, gdy ma zastosowanie. Karta nie przejmuje zawartych w starszym materiale dat stosowania AI Act.",
+          "retrieval_status": "not_checked_locally",
+          "retrieved_at": ""
+        },
+        {
+          "id": "EC_AI",
+          "title": "Komisja Europejska — AI Act, podejście zależne od ryzyka",
+          "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+          "type": "official_summary",
+          "reviewed_on": "2026-10-20",
+          "sections": [
+            "A Risk-based Approach",
+            "High risk",
+            "Transparency risk",
+            "Application timeline — wymaga bieżącej weryfikacji"
+          ],
+          "notes": "Klasyfikacja zależy od przeznaczenia i roli podmiotu. Omówienie wskazuje m.in. określone zastosowania AI w ocenianiu egzaminów jako przykłady wysokiego ryzyka. Samo użycie modelu w aplikacji nie przesądza tej kwalifikacji. Nie zapisano na stałe terminów stosowania: należy sprawdzać aktualny akt i jego zmiany. Wymagania jakości danych i nadzoru trzeba przypisać do właściwego zakresu obowiązków.",
+          "retrieval_status": "not_checked_locally",
+          "retrieved_at": ""
+        }
+      ]
+    }
+  ]
+}
