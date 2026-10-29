@@ -1,0 +1,328 @@
+{
+  "format": 1,
+  "agent_version": "1.0.2",
+  "id": "5f0023185cec-67c80748c857",
+  "title": "Wstępna analiza prawna wykluczeń Git i testu selekcji plików",
+  "commit": "5f0023185cec49664718df16f27f367a412e3619",
+  "base": "5ed8c12197b6a491a3fab8debf3aa12d8f79246b",
+  "branch": "master",
+  "commit_time": 1793230412,
+  "created_at": "2026-10-28T23:35:35.885349+00:00",
+  "kind": "commit",
+  "profile_signature": "97582b709f2e2fe3e7098d6dedc88abcd78cbd14cf8236884d145006cbc24e80",
+  "context_hashes": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "88545f1dd6fc98ca4e10e9b9394c57eabb66928bd27707302fc98b4dd73fff46"
+    },
+    {
+      "path": "ENGINEERING_RULES.md",
+      "sha256": "c850c051c67a71e38b8b2dcec4a540078e5e249111ba219c15013ac2df02364d"
+    },
+    {
+      "path": "LEGAL_AGENT.md",
+      "sha256": "a29da18434e1ca6dfbeb16b2b8980615ac84d2f63067aeee94d01141f89dc853"
+    },
+    {
+      "path": "docs/legal/APP_PROFILE.md",
+      "sha256": "22b353d327b986fef00c095718b7657a800fc8406ca79ce6cb23433e658a57f3"
+    },
+    {
+      "path": "docs/legal/DECISIONS.md",
+      "sha256": "4f1ba4a3ff52b4e1365a3773cbdf1bc8486b0107232b2aa83a30d898455d93df"
+    },
+    {
+      "path": "docs/APP_PLAN.md",
+      "sha256": "764922f7d64bc6dd4dfd67b1983f624785dcd4f09883779f4d109369c3a2fac5"
+    },
+    {
+      "path": "docs/PROJECT_STATUS.md",
+      "sha256": "4c31dc4d112272b6d2f9d92bb1b7b6e2e5f1b5556d025a5ab648c6c3a5e6f19e"
+    },
+    {
+      "path": "docs/CODE_MAP.md",
+      "sha256": "c482de31e6dc985dc22d0430ce10113f13131b6ae9b86874accedbe486b2ba18"
+    }
+  ],
+  "legal_sources": [
+    {
+      "id": "EDPB_BASICS",
+      "title": "EROD — podstawy ochrony danych i zasady RODO",
+      "url": "https://www.edpb.europa.eu/sme/learn-the-basics/data-protection-basics_en",
+      "type": "guidance",
+      "reviewed_on": "2026-10-20",
+      "sections": [
+        "What is personal data?",
+        "The key principles of the GDPR",
+        "Art. 6 GDPR — omówienie podstaw przetwarzania"
+      ],
+      "notes": "Dane mogą identyfikować osobę bezpośrednio albo pośrednio. Przetwarzanie wymaga właściwej podstawy; zgoda jest jedną z możliwości. Cel wyznacza potrzebny zakres i czas przechowywania. Dane osobowe powinny być prawidłowe i chronione. Karta jest skrótem poradnika, nie tekstem ustawy. Zakres zastosowania i wyjątki trzeba ustalić w kontekście.",
+      "retrieval_status": "retrieved",
+      "retrieved_at": "2026-10-28T23:31:30+00:00",
+      "content_sha256": "d4c565fe61bfe73412fdde47f2693b6765521dd0801e7ad53a1c82081d17c610",
+      "retrieved_excerpt": "Data protection basics | Data protection guide for small business | European Data Protection Board Skip to main content On this page What is personal data? What does processing personal data mean? Does the GDPR apply to your organisation? The key principles of the GDPR Data protection basics What is personal data? Personal data means any information relating to an identified or identifiable individual. Examples of the type of information that may allow the direct or indirect identification of an individual, and therefore qualify as personal data , are: name, surname, phone numbers of clients, stakeholders, employees, providers; identification numbers, such as an individual’s client number, an individual’s employee number, a booking reference; email addresses, location data; an individual’s browsing history; an individual’s purchase history and receipts; photos, videos and audio recordings containing images or sounds of individuals. With this personal data, an individual may be identified directly or indirectly: if your organisation is processing an individual’s name or surname for example, this personal data allows the direct identification of this individual; if your organisation is processing an individual’s client number or booking reference for example, this personal data may allow the indirect identification of that individual. any type of information processed in relation to the individual directly or indirectly identified (i.e. preferences, habits) will be considered as personal data as well. Read more Art. 4 GDPR EUR-Lex Special categories of personal data Some types of personal data, usually called sensitive data, belong to special categories which deserve more protection. According to Art. 9 GDPR, sensitive data includes data that reveals information about: an individual’s health; an individual’s sex life or sexual orientation; an individual’s racial or ethnic origin; an individual’s political opinions, religious or philosophical beliefs; an individual’s biometric and genetic data; trade union membership. The processing of an individual’s sensitive data is generally prohibited, except under specific circumstances that justify its processing (such as explicit consent). For more details on the circumstances under which sensitive data can be processed check Process personal data lawfully . Personal data concerning criminal convictions and offences The processing of personal data relating to criminal convictions and offences is subject to strict legal conditions. This personal data can only be processed by an official authority, such as the police, under the control of an official authority, or when authorised by domestic law. Read more Art. 9 GDPR EUR-Lex Art. 10 GDPR EUR-Lex GDPR good practices checklist Ask yourself if the purpose for which personal data may be collected is justified. Only collect personal data that is necessary for the specific purpose(s) envisaged. Inform individuals about how and for what purposes their personal data may be processed. Check if you have an appropriate legal basis for the processing of personal data. In case you intend to rely on the consent of individuals, ask for their consent before processing their personal data. Make sure that individuals’ personal data is handled in a secure way. Keep individuals’ personal data accurate and up to date. Delete individuals’ personal data when no longer necessary. Please bear in mind that national legislation may oblige you to keep certain data (i.e. for tax reasons). What does processing personal data mean? The processing of individuals’ personal data includes any type of activity (processing operation) performed whether or not by automated means on or with individuals’ personal data. Examples of processing operations include collecting, recording, organising, using, modifying, storing, disclosing individuals’ personal data. Even if the GDPR mainly relates to automated processing of personal data, processing operations carried out manually will also be subject to the GDPR from the moment the paper files are organised in a systematic manner, e.g. ordered alphabetically in a filing cabinet. Read more Art. 4 GDPR EUR-Lex Does the GDPR apply to your organisation? The GDPR may apply to all private and public organisations if: the organisation in question is established in the EU or in the European Economic Area (EEA - EU countries + Iceland, Liechtenstein and Norway); or the organisation is not established in the EEA but its products or services are offered to individuals who are in the EEA, or the organisation is monitoring the behaviour of individuals who are in the EEA. The GDPR also applies in the same way to any sub-contractor that may be processing individuals’ personal data on behalf of a private or public organisation. Read more Art. 2 GDPR EUR-Lex Art. 3 GDPR EUR-Lex RGPD : de quoi parle-t-on ? CNIL Guidelines on the territorial scope of the GDPR EDPB In practice, GDPR applies to you if one of the following conditions apply You are a company based in an EEA country; You are an organisation, based in a non-EEA country, selling goods or offering services, even for free, targeting individuals in an EEA country; You are an IT company based in a non-EEA country that has been subcontracted by a private organisation based in the EEA to manage their IT databases, such as a client’s database; You are a service provider based in the EEA and processing personal data on behalf of another company. The key principles of the GDPR When processing individuals’ personal data, your organisation must comply with the following 6 key principles of the GDPR . In addition, your organisation must be able to demonstrate its compliance with these principles. Lawfulness, Fairness and Transparency Any processing of personal data must be lawful, fair and transparent. Your organisation can only process an individual’s personal data if the processing operation envisaged is lawful; thus based on the individual’s consent, necessary for the performance of a contract, or based on one of the other legal bases for processing data mentioned in Art. 6 GDPR. If the processing is based on consent, your organisation must ensure that this consent is freely given, informed, specific and unambiguous. In other words, there must be no doubt that individuals are aware of what they agree to, for what purposes the processing is being done, and that this consent was actively given before the processing started. Furthermore, individuals should be able to freely withdraw their consent. If you realise that the processing of their data will nevertheless be necessary (i.e. in the context of a contract), it means that consent is not the appropriate legal basis. Read more Art. 6 GDPR EUR-Lex Art. 9 GDPR EUR-Lex Art. 13 GDPR EUR-Lex Art. 14 GDPR EUR-Lex Purpose limitation Your organisation can only collect personal data for specified, explicit and legitimate purposes. The processing of an individual’s data must be strictly limited to the purp",
+      "currency": "Nie potwierdza aktualności stanu prawnego; sprawdź datę karty i zakres źródła."
+    },
+    {
+      "id": "EDPB_DESIGN",
+      "title": "EROD — Guidelines 4/2019, ochrona danych w fazie projektowania i domyślnie",
+      "url": "https://www.edpb.europa.eu/documents/guideline/guidelines-42019-on-article-25-data-protection-by-design-and-by-default_en",
+      "type": "guidance",
+      "reviewed_on": "2026-10-20",
+      "sections": [
+        "Guidelines 4/2019 — art. 25 RODO",
+        "Data protection by design and by default — cykl życia"
+      ],
+      "notes": "Przejrzano wytyczne w wersji 2.0 przyjętej 20.10.2020 oraz stronę publikacji. Dobór skutecznych środków technicznych i organizacyjnych powinien uwzględniać ochronę danych przed rozpoczęciem przetwarzania i w toku działania systemu. Wytyczne dotyczą również istniejących systemów. Samo zainstalowanie narzędzia audytowego nie realizuje tych zasad.",
+      "retrieval_status": "retrieved",
+      "retrieved_at": "2026-10-28T23:31:31+00:00",
+      "content_sha256": "54cca40b38fc3ca0899541a8d0843dacd42ea872584792fb3c5fe5aa36421f39",
+      "retrieved_excerpt": "Guidelines 4/2019 on Article 25 Data Protection by Design and by Default | European Data Protection Board Skip to main content Guidelines 4/2019 on Article 25 Data Protection by Design and by Default Guideline 20 October 2020 Final version Go to the related public consultation Downloadable documents Guidelines 4/2019 PDF, 305.39 KB Download Guidelines 4/2019 Select other language to download with the button български español čeština dansk Deutsch eesti ελληνικά English français hrvatski italiano latviešu lietuvių magyar Malti Nederlands polski português română slovenčina slovenščina suomi svenska Previous versions and public consultation Guidelines 4/2019 v1 PDF, 711.44 KB Download Guidelines 4/2019 v1 At a glance Summary: data protection by design & by default, when to act and what to do PDF, 322.28 KB Download Summary: data protection by design & by default, when to act and what to do Other (courtesy) translations These translations have been provided by the Deutsche Gesellchaft für Internationale Zusammenarbeit (GIZ) GmbH. The EDPB is not responsible for the accuracy of the translations. სახელმძღვანელო რეკომენდაცია 4/2019 25-ე მუხლის შესახებ მონაცემთა მეტად დაფარვის პრიორიტეტი, როგორც ალტერნატიული მიდგომის არჩევამდე ავტომატურად გამოყენებული საწყისი მეთოდი ახალი პროდუქტის ან მომსახურების შექმნისას (Georgian) Настанови 4/2019 (Ukrainian) Related topics: #Basic principles #Technology #Privacy by design and by default Related documents Guidelines 01/2025 on Pseudonymisation Guideline 17 January 2025 Public consultation closed #Technology Read more about Guidelines 01/2025 on Pseudonymisation Guidelines 03/2026 on web scraping in the context of generative AI Guideline 08 July 2026 Public consultation ongoing #Artificial intelligence #Technology #Accountability #Basic principles Read more about Guidelines 03/2026 on web scraping in the context of generative AI Guidelines 1/2026 on processing of personal data for scientific research purposes Guideline 16 April 2026 Public consultation closed #Health and research #Legal basis #Controller/processor #Data subject rights #Basic principles Read more about Guidelines 1/2026 on processing of personal data for scientific research purposes All documents × We use cookies When you visit our website, if you give your consent, we will use cookies to allow us to collect data for aggregated statistics to improve our services and remember your choice for future visits. If you don't want this, we will only use cookies to remember your choice for future visits (i.e., essential cookies). If you don't select any of the two options, no cookies will be deployed, but the banner will re-appear every time you enter our website. More information on cookies and data protection . Accept cookies for aggregated statistics No thanks, only essential cookies × We've detected your browser's Do Not Track request, so no tracking cookies will be deployed on this website. Click the button below to hide this message for 6 months. Dismiss",
+      "currency": "Nie potwierdza aktualności stanu prawnego; sprawdź datę karty i zakres źródła."
+    },
+    {
+      "id": "EDPB_RIGHTS",
+      "title": "EROD — realizacja praw osób",
+      "url": "https://www.edpb.europa.eu/sme/be-compliant/respect-individuals-rights_en",
+      "type": "guidance",
+      "reviewed_on": "2026-10-20",
+      "sections": [
+        "Respect individuals’ rights",
+        "Right to information",
+        "Right to rectification",
+        "Right to erasure"
+      ],
+      "notes": "System i procedury powinny wspierać realizację właściwych praw, w tym dostępu i sprostowania. Zastosowanie konkretnego prawa zależy od sytuacji; usunięcie danych nie jest bezwzględne. Informacje o przetwarzaniu powinny odpowiadać rzeczywistym celom i przepływom. Role administratora i podmiotu przetwarzającego wymagają ustalenia.",
+      "retrieval_status": "retrieved",
+      "retrieved_at": "2026-10-28T23:31:31+00:00",
+      "content_sha256": "21ec210bc3a4f4b24bdbd705d3ef1c8e6069b9cf1947626427c390b5ac75fab4",
+      "retrieved_excerpt": "Respect individuals’ rights | Data protection guide for small business | European Data Protection Board Skip to main content On this page Which rights do individuals have under the GDPR? How to handle data subject rights request Right to be informed Right of access Right to rectification Right to erasure (right to be forgotten) Right to restriction of the processing Right to data portability Right to object Right not be subject to a decision based solely on automated processing Data subject rights for each legal basis Respect individuals’ rights Which rights do individuals have under the GDPR? The GDPR provides the following rights to data subjects, i.e. individuals whose data is processed: Right to be informed Right of access Right to rectification Right to erasure (right to be forgotten) Right to restriction of processing Right to data portability Right to object Right not be subject to a decision based solely on automated processing Please note that some of those rights do not apply in all situations, you can see the data subject rights for each legal basis table for more information. The data controller is under an obligation to respond to requests of data subjects who exercise their rights and must facilitate the exercise of these rights. The data processor must assist the data controller in this task. Checklist of what to do concerning data subject rights: Be prepared : Develop systems and procedures to respond to data subject rights requests and train your staff to integrate data subject rights requests into your internal workflows. Facilitate the exercise of rights : Make it easy for data subjects to know what their rights are and how to contact you to exercise them. Know your data flows : Keep your register up to date to rapidly identify the data you process and to locate and retrieve information efficiently. Be transparent : Always inform data subjects in a clear and understandable way about the personal data you process, prior to the processing (for instance in your privacy policy) and during the processing (for instance when complying with a data subject access request). Answer within 1 month : Always answer a data subject request within one month. If you need additional time to answer or if you cannot comply with the request: inform the data subject of this within the one month period. Pass it on : When you receive a request concerning personal data you have transferred to other recipients, do not forget, if need be, to inform the recipients of the result of the request. Document : Keep track of requests from data subjects, and record your answers, also keep track of your reasoning when you do not reply to a request. Read more Chapter III GDPR EUR-Lex Art. 28 GDPR EUR-Lex How to handle data subject rights request Transparency is key in data protection in general and, of course, in the context of data subject’s rights. The data controller must: communicate with data subjects in a clear and understandable language (this is particularly important in cases when an organisation is addressing children); and facilitate the exercise of these rights, in particular via electronic means. For example, you can provide an online form on your website which data subjects can use to easily exercise their data protection rights. Respond in writing The general rule is that an organisation should respond to an individual’s access request in the same way the request was made, or in the way in which the data subject specifically asked for a response. Preferably, you should answer in writing, including where appropriate by electronic means. A reply to a data subject right request could be given orally, but that is not advised as you have to be able to prove that you have answered the request. Respond within one month The GDPR specifies in how much time a data controller must respond to a request, and in what cases it can charge fees. When data subjects exercise one of their rights, the controller must respond within one month . If the request is too complex and more time is needed to answer, then your organisation may extend the time limit by two further months, provided that the data subject is informed within one month after receiving the request. If your organisation can prove that the request is manifestly unfounded or excessive, in particular because of its repetitive character, you may either charge a reasonable fee or refuse to grant the request. If your organisation has reasonable doubts about the identity of the person making the request (for instance the request is made with another email address than the one usually used by your customer, or it is made outside of an authenticated customer account), you may request additional information to confirm the identity of the data subject before answering. If you do not intend to comply with the data subject’s specific request, you must inform the data subject within one month of receiving the request of the reasons why you will not grant the request (e.g. why you are not erasing the requested data). In addition, you must inform the data subjects of the possibility of lodging a complaint with their national data protection authority and seeking a judicial remedy. Do not charge a fee Your organisation cannot claim any payment from a data subject asking to exercise one of their rights. You may, however, charge a fee if the data subject’s request is manifestly unfounded or excessive, in particular because of their repetitive character. The calculation of the fee must take into account the administrative cost of responding to the request for your organisation. As explained above, it is also possible to refuse to act on a request that is manifestly unfounded or excessive. In such a situation, you must be able to demonstrate that this is the case. In practice A data subject lodges access requests every two months with the carpenter that manufactured their table. The carpenter answered the first request completely. As the carpenter does not process personal data as part of its core activity and they did not provide more than one service to the data subject, it is unlikely that changes occurred in the dataset concerning the data subject. The data subject has clarified that the new request concerns the same information as the last request. Consequently this request may be regarded as excessive due to its repetitive character. If the carpenter decides to provide the personal data to the data subject but against a fee, it is advisable to inform them in advance thereof, thus giving them a chance to withdraw the request to avoid being charged. Alternatively the carpenter can inform the data subject of the reasons why they will not reply to this request, as well as on the possibility to lodge a complaint with a data protection authority and seek a judicial remedy. Right to be informed Sorry, your browser doesn't support embedded videos. The right to be informed allows people to understand what will be done with their data, and, consequentl",
+      "currency": "Nie potwierdza aktualności stanu prawnego; sprawdź datę karty i zakres źródła."
+    },
+    {
+      "id": "UODO_DPIA",
+      "title": "UODO — Kiedy trzeba przeprowadzić ocenę skutków dla ochrony danych?",
+      "url": "https://uodo.gov.pl/pl/598/3617",
+      "type": "guidance",
+      "reviewed_on": "2026-10-20",
+      "sections": [
+        "Art. 35 RODO — przesłanki DPIA w omówieniu UODO",
+        "Wstępna ocena potrzeby DPIA"
+      ],
+      "notes": "Nie każda operacja wymaga pełnej DPIA. Potrzebę ocenia się przed przetwarzaniem według jego charakteru, zakresu, kontekstu, celu i prawdopodobieństwa wysokiego ryzyka. Administratorem pozostaje podmiot odpowiedzialny za ocenę, z konsultacją IOD, gdy ma zastosowanie. Karta nie przejmuje zawartych w starszym materiale dat stosowania AI Act.",
+      "retrieval_status": "retrieved",
+      "retrieved_at": "2026-10-28T23:31:32+00:00",
+      "content_sha256": "34abe9ec3d6a65cbc59487995bfc7554d2195231a6f3a3d99b38ab4e7da2c5e2",
+      "retrieved_excerpt": "Poradniki i wskazówki (od 2025 r.) - UODO Co robimy Edukacja Poradniki i wskazówki (od 2025 r.) 31.03.2025 Kiedy trzeba przeprowadzić ocenę skutków dla ochrony danych? Każdy administrator musi przeprowadzić ocenę skutków dla ochrony danych, gdy planowane przez niego operacje przetwarzania mogą z dużym prawdopodobieństwem powodować wysokie ryzyko naruszenia praw lub wolności osób fizycznych. Prezentujemy wskazówki, jak rozumieć poszczególne sytuacje przetwarzania danych, które mogą prowadzić do naruszeń praw osób fizycznych. Podajemy przykłady operacji na danych, które wymagają oceny skutków dla ochrony danych. Prezentujemy również wytyczne Prezesa UODO oraz Europejskiej Rady Ochrony Danych, które pomogą zrozumieć omawiane zagadnienie. Dodatkowo poruszamy problematykę oceny skutków w kontekście systemów sztucznej inteligencji (AI). Wprowadzenie RODO nie wymaga przeprowadzenia oceny skutków dla ochrony danych w odniesieniu do każdej operacji przetwarzania, którą administrator planuje. Ocena ta jest obowiązkowa , jeżeli takie przetwarzanie ze względu na swój charakter, zakres, kontekst i cele – w szczególności, gdy ma być prowadzone z użyciem nowych technologii – z dużym prawdopodobieństwem może powodować wysokie ryzyko naruszenia praw lub wolności osób fizycznych (art. 35 ust. 1 RODO). Administrator już na etapie projektowania danej operacji przetwarzania danych powinien dokonać analizy, czy podlega takiemu obowiązkowi tak, aby działania związane z oceną skutków dla ochrony danych zostały podjęte w odpowiednim czasie. Pamiętaj: Administrator, przed rozpoczęciem przetwarzania danych osobowych , w praktyce musi zawsze przeprowadzić wstępną ocenę , czy planowane operacje z dużym prawdopodobieństwem mogą powodować wysokie ryzyko naruszenia praw lub wolności osób fizycznych. Art. 35 ust. 3 RODO podaje przykłady operacji przetwarzania, które mogą powodować wysokie ryzyko dla praw i wolności osób fizycznych. Zgodnie z nim ocena skutków dla ochrony danych jest wymagana w szczególności w przypadku: systematycznej, kompleksowej oceny czynników osobowych odnoszących się do osób fizycznych, która opiera się na zautomatyzowanym przetwarzaniu, w tym profilowaniu, i jest podstawą decyzji wywołujących skutki prawne wobec osoby fizycznej lub w podobny sposób znacząco wpływających na osobę fizyczną; przetwarzania na dużą skalę szczególnych kategorii danych osobowych, o których mowa w art. 9 ust. 1, lub danych osobowych dotyczących wyroków skazujących i naruszeń prawa, o czym mowa w art. 10; lub systematycznego monitorowania na dużą skalę miejsc dostępnych publicznie. Komunikat Prezesa UODO Podane przykłady nie tworzą zamkniętej listy, a tym samym również inne operacje przetwarzania danych mogą powodować wysokie ryzyko naruszenia praw lub wolności osób fizycznych. Bardziej konkretne wskazówki zawierają wykazy rodzajów operacji przetwarzania podlegających wymogowi dokonania oceny skutków dla ochrony danych, które zgodnie z art. 35 ust. 4 RODO organy nadzorcze ustanawiają i podają do publicznej wiadomości. Taki wykaz stanowi załącznik do Komunikatu Prezesa Urzędu Ochrony Danych Osobowych z dnia 17 czerwca 2019 r. w sprawie wykazu rodzajów operacji przetwarzania danych osobowych wymagających oceny skutków przetwarzania dla ich ochrony. Komunikat został ogłoszony w Monitorze Polskim 8 lipca 2019 r. i jest udostępniony na stronie: http://monitorpolski.gov.pl/MP/2019/666 . Wykaz uzupełnia i konkretyzuje wytyczne Grupy Roboczej Art. 29 (WP 248) „ Wytyczne dotyczące oceny skutków dla ochrony danych oraz pomagające ustalić, czy przetwarzanie >>może powodować wysokie ryzyko<< do celów rozporządzenia 2016/679 ”, które 25.05.2018 r. zostały zatwierdzone przez Europejską Radę Ochrony Danych (EROD). Wytyczne wprowadzają 9 kryteriów, które należy wziąć pod uwagę przy ocenie czy należy przeprowadzić ocenę skutków dla ochrony danych, i przyjmują, że co do zasady spełnienie dwóch wymaga jej przeprowadzenia [i] . Wykaz stanowiący załącznik do Komunikatu Prezesa UODO zawiera 12 kryteriów/rodzajów operacji przetwarzania wraz z przykładami operacji, w których może wystąpić wysokie ryzyko naruszenia praw lub wolności oraz przykładami potencjalnych obszarów obejmujących te operacje. Tymi kryteriami/operacjami przetwarzania są: Ewaluacja lub ocena, w tym profilowanie i przewidywanie (analiza behawioralna) w celach wywołujących negatywne skutki prawne, fizyczne, finansowe lub inne niedogodności dla osób fizycznych; Zautomatyzowane podejmowanie decyzji wywołujących skutki prawne, finansowe lub podobne istotne skutki; Systematyczne monitorowanie na dużą skalę miejsc dostępnych publicznie wykorzystujące elementy rozpoznawania cech lub właściwości obiektów, które znajdą się w monitorowanej przestrzeni. Do tej grupy systemów nie są zaliczane systemy monitoringu wizyjnego, w których obraz jest nagrywany i wykorzystywany tylko w przypadku potrzeby analizy incydentów naruszenia prawa; Przetwarzanie szczególnych kategorii danych osobowych i dotyczących wyroków skazujących i czynów zabronionych (danych wrażliwych według opinii WP 29); Przetwarzanie danych biometrycznych wyłącznie w celu identyfikacji osoby fizycznej bądź w celu kontroli dostępu; Przetwarzanie danych genetycznych; Dane przetwarzane na dużą skalę, gdzie pojęcie dużej skali dotyczy: liczby osób, których dane są przetwarzane, zakresu przetwarzania, okresu przechowywania danych oraz geograficznego zakresu przetwarzania Przeprowadzanie porównań, ocena lub wnioskowanie na podstawie analizy danych pozyskanych z różnych źródeł; Przetwarzanie danych dotyczących osób, których ocena i świadczone im usługi są uzależnione od podmiotów lub osób, które dysponują uprawnieniami nadzorczymi lub ocennymi; Innowacyjne wykorzystanie lub zastosowanie rozwiązań technologicznych lub organizacyjnych; Gdy przetwarzanie samo w sobie uniemożliwia osobom, których dane dotyczą, wykonywanie prawa lub korzystanie z usługi lub umowy; Przetwarzanie danych lokalizacyjnych. Jak korzystać z wykazu operacji? Co do zasady, przetwarzanie, które spełnia przynajmniej dwa ze wskazanych kryteriów/rodzajów operacji, będzie wymagać przeprowadzenia oceny skutków dla ochrony danych. Im więcej kryteriów spełnia przetwarzanie, tym bardziej prawdopodobne jest wystąpienie wysokiego ryzyka naruszenia praw lub wolności osób, których dane dotyczą, a w konsekwencji konieczne jest przeprowadzenie oceny skutków dla ochrony danych. Administrator może jednak uznać, że ze względu na swój charakter, zakres, kontekst i cele przetwarzanie spełniające tylko jedno z wymienionych kryteriów będzie wymagało przeprowadzenia oceny skutków dla ochrony danych . Przykład: Wdrożenie systemu monitorowania czasu pracy pracowników oraz przepływu informacji w wykorzystywanych przez nich narzędziach (poczty elektronicznej, Internetu) będzie wymagało przeprowadzenia oceny skutków dla ochrony danych ze względu na spełnienie kryterium 3 i 9 z wykazu. Wykaz nie ma charakteru wyczerpującego . Dalsze wskazówki dla administratorów mogą zawiera",
+      "currency": "Nie potwierdza aktualności stanu prawnego; sprawdź datę karty i zakres źródła."
+    },
+    {
+      "id": "EC_AI",
+      "title": "Komisja Europejska — AI Act, podejście zależne od ryzyka",
+      "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+      "type": "official_summary",
+      "reviewed_on": "2026-10-20",
+      "sections": [
+        "A Risk-based Approach",
+        "High risk",
+        "Transparency risk",
+        "Application timeline — wymaga bieżącej weryfikacji"
+      ],
+      "notes": "Klasyfikacja zależy od przeznaczenia i roli podmiotu. Omówienie wskazuje m.in. określone zastosowania AI w ocenianiu egzaminów jako przykłady wysokiego ryzyka. Samo użycie modelu w aplikacji nie przesądza tej kwalifikacji. Nie zapisano na stałe terminów stosowania: należy sprawdzać aktualny akt i jego zmiany. Wymagania jakości danych i nadzoru trzeba przypisać do właściwego zakresu obowiązków.",
+      "retrieval_status": "retrieved",
+      "retrieved_at": "2026-10-28T23:31:32+00:00",
+      "content_sha256": "416afaca2906e800108ec0c7c9e90b39c97660087b39a29b9a2e798d54b2ada4",
+      "retrieved_excerpt": "AI Act | Shaping Europe’s digital future Skip to main content AI Act The AI Act is the first-ever legal framework on AI, which addresses the risks of AI and positions Europe to play a leading role globally. The AI Act (Regulation (EU) 2024/1689 laying down harmonised rules on artificial intelligence) is the first-ever comprehensive legal framework on AI worldwide. The aim of the rules is to foster trustworthy AI in Europe. For any questions on the AI Act , check out the AI Act Single Information platform . The AI Act sets out a risk-based rules for AI developers and deployers regarding specific uses of AI. It is part of a wider package of policy measures to support the development of trustworthy AI, which includes the AI Continent Action Plan , the AI Innovation Package and the launch of AI Factories . Together, these measures guarantee safety, fundamental rights and human-centric AI, and strengthen uptake, investment and innovation in AI across the EU. To facilitate the transition to the new regulatory framework, the Commission has launched the AI Pact , a voluntary initiative that seeks to support the future implementation, engage with stakeholders and invite AI providers and deployers from Europe and beyond to comply with the key obligations of the AI Act. In parallel, the AI Act Service Desk is also providing information and support for a smooth and effective implementation of the AI Act across the EU. Why do we need rules on AI? The AI Act ensures that Europeans can trust what AI has to offer. While most AI systems pose limited to no risk and can contribute to solving many societal challenges, certain AI systems create risks that we must address to avoid undesirable outcomes. For example, it is often not possible to find out why an AI system has made a decision or prediction and taken a particular action. So, it may become difficult to assess whether someone has been unfairly disadvantaged, such as in a hiring decision or in an application for a public benefit scheme. Although existing legislation provides some protection, it is insufficient to address the specific challenges AI systems may bring. A Risk-based Approach The AI Act defines 4 levels of risk for AI systems: Unacceptable risk All AI systems considered a clear threat to the safety, livelihoods and rights of people are banned. The AI Act prohibits nine practices , namely: harmful AI-based manipulation and deception harmful AI-based exploitation of vulnerabilities social scoring Individual criminal offence risk assessment or prediction untargeted scraping of the internet or CCTV material to create or expand facial recognition databases emotion recognition in workplaces and education institutions biometric categorisation to deduce certain protected characteristics real-time remote biometric identification for law enforcement purposes in publicly accessible spaces AI systems that generate non-consensual sexually explicit and intimate content or child sexual abuse (CSAM) material, such as AI ‘nudification' apps Prohibitions 1-8 became effective in February 2025. The Commission published 2 key documents to support the practical application of the prohibited practices: The guidelines on prohibited AI practices under the AI Act , which offer legal explanations and practical examples to help stakeholders understand and comply with the prohibitions. The guidelines on the AI system definition of the AI Act , to assist stakeholders in determining the scope of the AI Act Prohibition 9 comes into effect in December 2026 and was introduced as a part of the AI Omnibus. High risk AI use cases that can pose serious risks to health, safety or fundamental rights are classified as high-risk. These high-risk use-cases include: AI safety components in critical infrastructures (e.g. transport), the failure of which could put the life and health of citizens at risk AI solutions used in education institutions, that may determine the access to education and course of someone’s professional life (e.g. scoring of exams) AI-based safety components of products (e.g. AI application in robot-assisted surgery) AI tools for employment, management of workers and access to self-employment (e.g. CV-sorting software for recruitment) Certain AI use-cases utilised to give access to essential private and public services (e.g. credit scoring denying citizens opportunity to obtain a loan) AI systems used for remote biometric identification, emotion recognition and biometric categorisation (e.g. AI system to retroactively identify a shoplifter) AI use-cases in law enforcement that may interfere with people’s fundamental rights (e.g. evaluation of the reliability of evidence) AI use-cases in migration, asylum and border control management (e.g. automated examination of visa applications) AI solutions used in the administration of justice and democratic processes (e.g. AI solutions to prepare court rulings) Starting on 2 December 2027, high-risk AI systems will be subject to strict obligations before they can be put on the market: adequate risk assessment and mitigation systems high-quality of the datasets feeding the system to minimise risks of discriminatory outcomes logging of activity to ensure traceability of results detailed documentation providing all information necessary on the system and its purpose for authorities to assess its compliance clear and adequate information to the deployer appropriate human oversight measures high level of robustness, cybersecurity and accuracy Transparency risk This refers to the risks associated with a need for transparency around the use of AI. The AI Act introduces specific disclosure obligations to ensure that humans are informed when necessary to preserve trust. For instance, when using AI systems such as chatbots, humans should be made aware that they are interacting with a machine so they can take an informed decision. Moreover, providers of generative AI have to ensure that AI-generated content is identifiable. On top of that, certain AI-generated content should be clearly and visibly labelled, namely deep fakes and text published with the purpose to inform the public on matters of public interest. The transparency rules of the AI Act will come into effect in August 2026. Minimal or no risk The AI Act does not introduce rules for AI that is deemed minimal or no risk. The vast majority of AI systems currently used in the EU fall into this category. This includes applications such as AI-enabled video games or spam filters. How does it all work in practice for providers of high-risk AI systems? Once an AI system is on the market, authorities are in charge of market surveillance, deployers ensure human oversight and monitoring, and providers have a post-market monitoring system in place. Providers and deployers will also report serious incidents and malfunctioning. What are the rules for General-Purpose AI models? General-purpose AI (GPAI) models can perform a wide range of tasks and are becoming the bas",
+      "currency": "Nie potwierdza aktualności stanu prawnego; sprawdź datę karty i zakres źródła."
+    }
+  ],
+  "targets": [
+    {
+      "path": ".gitignore",
+      "version": "after"
+    },
+    {
+      "path": "tools/tests/check_rust_selection.py",
+      "version": "after"
+    }
+  ],
+  "parts": [
+    {
+      "title": "Wstępna analiza prawna wykluczeń Git i testu selekcji plików",
+      "summary": "W dwóch plikach objętych zakresem nie wskazano konkretnych nowych zagadnień wymagających ustalenia prawnego. Dodano wykluczenie /.idea/ oraz testy na danych syntetycznych sprawdzające wybór plików i wykluczanie plików potencjalnie poufnych. Obecność testów nie potwierdza ich wykonania ani skuteczności zabezpieczeń.",
+      "scope_note": "Analiza statyczna wyłącznie przekazanego wejścia dla commitu 5f0023185cec49664718df16f27f367a412e3619, gałąź master. Zakres główny obejmuje wyłącznie wersje after plików .gitignore i tools/tests/check_rust_selection.py. Wersję before .gitignore i pozostałe materiały wykorzystano pomocniczo. Uwzględniono instrukcje roli prawnej oraz plan eksperymentu BM25; planowana integracja nie jest potwierdzonym działaniem aplikacji.",
+      "coverage": [
+        {
+          "path": ".gitignore",
+          "version": "after",
+          "description": "Przejrzano cały przekazany plik. W porównaniu z wersją before dodano /.idea/. Wpisy ignorowania plików nie potwierdzają usunięcia wcześniej zapisanych danych ani ochrony dostępu."
+        },
+        {
+          "path": "tools/tests/check_rust_selection.py",
+          "version": "after",
+          "description": "Przejrzano cały przekazany skrypt. Definiuje tworzenie tymczasowych repozytoriów z danymi syntetycznymi oraz sprawdzenia selekcji źródeł Rust, manifestów Cargo i wykluczeń plików potencjalnie poufnych dla obu agentów. Końcowy komunikat o sukcesie jest elementem kodu, a nie przekazanym wynikiem testu."
+        }
+      ],
+      "assumptions": [],
+      "flows": [
+        {
+          "key": "synthetic-selection-fixtures-to-temporary-directory",
+          "purpose": "Przygotowanie sztucznych plików do sprawdzenia reguł wyboru materiałów dla agentów.",
+          "data": "Treści zdefiniowane w słowniku contents: minimalne źródło Rust, pliki Cargo, teksty oznaczające pliki generowane i pliki wykluczane oraz syntetyczny plan. W tych wartościach nie stwierdzono rzeczywistych poświadczeń ani danych konkretnych osób.",
+          "origin": "Stałe tekstowe w tools/tests/check_rust_selection.py.",
+          "destination": "Pliki pod ścieżką katalogu utworzonego przez tempfile.TemporaryDirectory().",
+          "retention": "Kod przewiduje katalog tymczasowy zarządzany przez blok with, ze sprzątaniem po wyjściu z bloku. Nie potwierdzono wykonania ani usunięcia pozostałości po awarii.",
+          "confidence": "high",
+          "evidence": [
+            {
+              "path": "tools/tests/check_rust_selection.py",
+              "version": "after",
+              "first_line": 16,
+              "last_line": 17,
+              "quote": "with tempfile.TemporaryDirectory() as tmp:\n    root = pathlib.Path(tmp)"
+            },
+            {
+              "path": "tools/tests/check_rust_selection.py",
+              "version": "after",
+              "first_line": 26,
+              "last_line": 29,
+              "quote": "    for name, text in contents.items():\n        p = root / name\n        p.parent.mkdir(parents=True, exist_ok=True)\n        p.write_text(text)"
+            }
+          ],
+          "unknowns": [
+            "Nie przekazano wyniku uruchomienia potwierdzającego zapis i sprzątnięcie katalogu.",
+            "Nie oceniono ewentualnych dodatkowych zapisów wykonywanych przez importowane funkcje agentów; ich implementacji nie ma w wejściu."
+          ]
+        }
+      ],
+      "findings": [],
+      "previous_findings": [],
+      "profile_suggestions": [],
+      "next_steps": [],
+      "limitations": [
+        "Nie używano narzędzi, sieci ani plików spoza wejścia; nie uruchamiano kodu i niczego nie zapisano. Wymagane w AGENTS.md sprawdzenie bieżącego stanu Git nie zostało wykonane, ponieważ zlecenie ogranicza analizę do przekazanej migawki.",
+        "Nie przekazano docs/README.md wymaganego przez lokalne instrukcje. Dostępne były profil, decyzje, plan, stan projektu i mapa kodu; nie uzupełniano brakującej dokumentacji domysłami.",
+        "Nie przekazano implementacji importowanych modułów agent ani wyników testów. Nie potwierdzono skuteczności wykluczeń, rzeczywistego działania instalatorów, braku komunikacji sieciowej ani kompletności tworzonych pakietów danych.",
+        "Nie przekazano wersji before skryptu testowego, więc jego szczegółowe zmiany względem bazy pozostają nieustalone. Kontekst PROJECT_STATUS.md opisuje wcześniejszy source_head i nie potwierdza stanu działania narzędzi po analizowanym commicie.",
+        "Karty źródeł prawnych mają reviewed_on 2026-10-20 i retrieved_at 2026-10-28. Udostępnione fragmenty poradników i omówienia nie stanowią aktualnej weryfikacji tekstów aktów, zmian ani terminów stosowania. Nie wyprowadzano z nich obowiązków dla samych syntetycznych testów.",
+        "Nie oceniono licencji pełnego grafu zależności, warunków dostawcy analiz modelowych ani przyszłych korpusów i integracji. Brak ustaleń w tym wąskim zakresie nie oznacza audytu ani potwierdzenia zgodności całej aplikacji."
+      ]
+    }
+  ],
+  "manifests": [
+    {
+      "part": 1,
+      "files": [
+        {
+          "path": "AGENTS.md",
+          "version": "context",
+          "sha256": "88545f1dd6fc98ca4e10e9b9394c57eabb66928bd27707302fc98b4dd73fff46",
+          "provenance": "working_tree_context",
+          "redacted_lines": 0
+        },
+        {
+          "path": "ENGINEERING_RULES.md",
+          "version": "context",
+          "sha256": "c850c051c67a71e38b8b2dcec4a540078e5e249111ba219c15013ac2df02364d",
+          "provenance": "working_tree_context",
+          "redacted_lines": 0
+        },
+        {
+          "path": "LEGAL_AGENT.md",
+          "version": "context",
+          "sha256": "a29da18434e1ca6dfbeb16b2b8980615ac84d2f63067aeee94d01141f89dc853",
+          "provenance": "working_tree_context",
+          "redacted_lines": 0
+        },
+        {
+          "path": "docs/legal/APP_PROFILE.md",
+          "version": "context",
+          "sha256": "22b353d327b986fef00c095718b7657a800fc8406ca79ce6cb23433e658a57f3",
+          "provenance": "working_tree_context",
+          "redacted_lines": 0
+        },
+        {
+          "path": "docs/legal/DECISIONS.md",
+          "version": "context",
+          "sha256": "4f1ba4a3ff52b4e1365a3773cbdf1bc8486b0107232b2aa83a30d898455d93df",
+          "provenance": "working_tree_context",
+          "redacted_lines": 0
+        },
+        {
+          "path": "docs/APP_PLAN.md",
+          "version": "context",
+          "sha256": "764922f7d64bc6dd4dfd67b1983f624785dcd4f09883779f4d109369c3a2fac5",
+          "provenance": "working_tree_context",
+          "redacted_lines": 0
+        },
+        {
+          "path": "docs/PROJECT_STATUS.md",
+          "version": "context",
+          "sha256": "4c31dc4d112272b6d2f9d92bb1b7b6e2e5f1b5556d025a5ab648c6c3a5e6f19e",
+          "provenance": "working_tree_context",
+          "redacted_lines": 0
+        },
+        {
+          "path": "docs/CODE_MAP.md",
+          "version": "context",
+          "sha256": "c482de31e6dc985dc22d0430ce10113f13131b6ae9b86874accedbe486b2ba18",
+          "provenance": "working_tree_context",
+          "redacted_lines": 0
+        },
+        {
+          "path": ".gitignore",
+          "version": "after",
+          "sha256": "6287181e46fbd28820dd5cc6f2fa43b0230f2ddf78e546178b104fb59458e722",
+          "git_blob": "3644d8476aa529ef5fc6eef6f2a32a9d140e689a",
+          "provenance": "5f0023185cec49664718df16f27f367a412e3619",
+          "redacted_lines": 0
+        },
+        {
+          "path": "tools/tests/check_rust_selection.py",
+          "version": "after",
+          "sha256": "6019acfa772b7122a18a0113bdad27f0271250ebe2bb97397059cb294b69a108",
+          "git_blob": "a0171f0c8591c84ce4097ab4656d6c2c00b5bec4",
+          "provenance": "5f0023185cec49664718df16f27f367a412e3619",
+          "redacted_lines": 0
+        },
+        {
+          "path": ".gitignore",
+          "version": "before",
+          "sha256": "c1d785ee354148210f345c2e707acff659f47f49beccb2e5b65e7c504f978bbb",
+          "git_blob": "19c545d68111cf3f3487ad0fadd49a7c86c95592",
+          "provenance": "5ed8c12197b6a491a3fab8debf3aa12d8f79246b",
+          "redacted_lines": 0
+        },
+        {
+          "path": "Cargo.lock",
+          "version": "after",
+          "sha256": "0bfbda8130c7bcd59c94240f612c866e30420c88d314d3ad21d7986724af532d",
+          "git_blob": "f06300bd8b35d5276f55cd8b656cb885ed7876fb",
+          "provenance": "5f0023185cec49664718df16f27f367a412e3619",
+          "redacted_lines": 0
+        },
+        {
+          "path": "Cargo.toml",
+          "version": "after",
+          "sha256": "c210eae24495f68f159034a87c3668d32f72bfd5ae40f73f149f5fc0b3632666",
+          "git_blob": "6b469ae9245a4d7b8a07c695c9c15c49edffb371",
+          "provenance": "5f0023185cec49664718df16f27f367a412e3619",
+          "redacted_lines": 0
+        },
+        {
+          "path": "src/main.rs",
+          "version": "after",
+          "sha256": "c8e0583694bb1e0188dbe28fe0d65ac1130723c55f968b6262b906c147f72549",
+          "git_blob": "e7a11a969c037e00a796aafeff6258501ec15e9a",
+          "provenance": "5f0023185cec49664718df16f27f367a412e3619",
+          "redacted_lines": 0
+        }
+      ],
+      "omissions": [],
+      "line_repairs": {}
+    }
+  ],
+  "excluded_categories": "Sekrety, produkcyjne dane, binaria, pliki niewersjonowane, vendor/SDK i kod samych agentów; szczegóły filtrów w agent.py.",
+  "verification": "not_run",
+  "currency": "Nie wydano potwierdzenia zgodności prawnej."
+}

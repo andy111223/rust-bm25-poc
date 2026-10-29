@@ -7,6 +7,15 @@ przykładami schematu/testów, a nie historią tego projektu.
 SOURCES.json to skopiowany neutralny rejestr PL/UE; jego daty pochodzą ze źródła,
 nie są datą weryfikacji w tym projekcie. Aktualności prawa tutaj nie badano.
 
+## Stan informacji po przeglądzie 2026-10-29
+
+Poniższy opis migracji i wyniki offline są zapisem historycznym adaptacji,
+nie nową weryfikacją HEAD. Podczas aktualizacji dokumentacji nie uruchamiano
+instalatorów, doctor, testów ani modeli i nie sprawdzano lokalnego runtime.
+Istnieją już lokalne materiały obu agentów; ich zakres i commit opisuje
+[PROJECT_STATUS.md](PROJECT_STATUS.md). Wcześniejsze stwierdzenia o braku
+instalacji i analiz dotyczą etapu przygotowania, a nie ustalonego stanu bieżącego.
+
 ## Wymagania i instalacja
 
 Potrzebne: Git, Python 3 (biblioteka standardowa), Codex CLI z aktywnym dostępem
