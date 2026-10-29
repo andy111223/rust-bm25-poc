@@ -3,3 +3,7 @@
 /data/
 
 /.idea/
+
+# Build artifacts and IDE settings
+/target/
+.idea/
